@@ -1,5 +1,5 @@
-package Model.ConnectionStates;
-import Model.*;
+package Controller.ConnectionStates;
+import Controller.Connection;
 
 public interface ConnectionState {
     void operate(String key, Connection c);

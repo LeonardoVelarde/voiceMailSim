@@ -1,14 +1,14 @@
 package Model;
 import java.util.ArrayList;
 
-/**
+/*
    A first-in, first-out collection of messages. This
    implementation is not very efficient. We will consider
    a more efficient implementation in chapter 3.
 */
 public class MessageQueue
 {
-   /**
+   /*
       Constructs an empty message queue.
    */
    public MessageQueue()
@@ -16,7 +16,7 @@ public class MessageQueue
       queue = new ArrayList<Message>();
    }
 
-   /**
+   /*
       Remove message at head.
       @return message that has been removed from the queue
    */
@@ -25,7 +25,7 @@ public class MessageQueue
       return queue.remove(0);
    }
 
-   /**
+   /*
       Append message at tail.
       @param newMessage the message to be appended
    */
@@ -34,7 +34,7 @@ public class MessageQueue
       queue.add(newMessage);
    }
 
-   /**
+   /*
       Get the total number of messages in the queue.
       @return the total number of messages in the queue
    */
@@ -43,7 +43,7 @@ public class MessageQueue
       return queue.size();
    }
 
-   /**
+   /*
       Get message at head.
       @return message that is at the head of the queue, or null
       if the queue is empty

@@ -1,10 +1,10 @@
 package Model;
-/**
+/*
    A mailbox contains messages that can be listed, kept or discarded.
 */
 public class Mailbox
 {
-   /**
+   /*
       Creates Mailbox object.
       @param aPasscode passcode number
       @param aGreeting greeting string
@@ -17,7 +17,7 @@ public class Mailbox
       keptMessages = new MessageQueue();
    }
 
-   /**
+   /*
       Check if the passcode is correct.
       @param aPasscode a passcode to check
       @return true if the supplied passcode matches the mailbox passcode
@@ -27,7 +27,7 @@ public class Mailbox
       return aPasscode.equals(passcode);
    }
 
-   /**
+   /*
       Add a message to the mailbox.
       @param aMessage the message to be added
    */
@@ -36,7 +36,7 @@ public class Mailbox
       newMessages.add(aMessage);
    }
 
-   /**
+   /*
       Get the current message.
       @return the current message
    */
@@ -50,7 +50,7 @@ public class Mailbox
          return null;
    }
 
-   /**
+   /*
       Remove the current message from the mailbox.
       @return the message that has just been removed
    */
@@ -64,7 +64,7 @@ public class Mailbox
          return null;
    }
 
-   /**
+   /*
       Save the current message
    */
    public void saveCurrentMessage()
@@ -74,7 +74,7 @@ public class Mailbox
          keptMessages.add(m);
    }
 
-   /**
+   /*
       Change mailbox's greeting.
       @param newGreeting the new greeting string
    */
@@ -83,7 +83,7 @@ public class Mailbox
       greeting = newGreeting;
    }
 
-   /**
+   /*
       Change mailbox's passcode.
       @param newPasscode the new passcode
    */
@@ -92,7 +92,7 @@ public class Mailbox
       passcode = newPasscode;
    }
 
-   /**
+   /*
       Get the mailbox's greeting.
       @return the greeting
    */

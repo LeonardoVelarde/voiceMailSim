@@ -1,5 +1,6 @@
 package View;
-import Model.*;
+import Controller.Connection;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;

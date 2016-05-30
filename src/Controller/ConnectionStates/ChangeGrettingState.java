@@ -1,20 +1,17 @@
-package Model.ConnectionStates;
+package Controller.ConnectionStates;
 
-import Model.Connection;
+import Controller.Connection;
 
-public class ChangePasscodeState implements ConnectionState{
+public class ChangeGrettingState implements ConnectionState {
     @Override
     public void operate(String key, Connection connection) {
         if (key.equals("#"))
         {
-            connection.currentMailbox.setPasscode(connection.accumulatedKeys);
+            connection.currentMailbox.setGreeting(connection.currentRecording);
+            connection.currentRecording = "";
             connection.state = Connection.MAILBOX_MENU;
-            connection.state2 = new MailBoxMenuState();
             connection.interfaceManager.speakToAllInterfaces(Connection.MAILBOX_MENU_TEXT);
-            connection.accumulatedKeys = "";
         }
-        else
-            connection.accumulatedKeys += key;
     }
 
     @Override

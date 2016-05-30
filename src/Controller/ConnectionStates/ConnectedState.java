@@ -1,6 +1,6 @@
-package Model.ConnectionStates;
+package Controller.ConnectionStates;
 
-import Model.*;
+import Controller.Connection;
 
 public class ConnectedState implements ConnectionState {
     @Override

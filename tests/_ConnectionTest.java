@@ -1,6 +1,9 @@
+import Controller.Connection;
 import Model.*;
 import static org.junit.Assert.*;
 
+import View.InterfacePhoneConsole;
+import View.UserInterface;
 import org.junit.Test;
 import static org.mockito.Mockito.*;
 

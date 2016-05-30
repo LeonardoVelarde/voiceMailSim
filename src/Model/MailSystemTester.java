@@ -1,6 +1,7 @@
 package Model;
+import Controller.Connection;
 import View.*;
-/**
+/*
    This program tests the mail system. A single phone
    communicates with the program through System.in/System.out.
 */

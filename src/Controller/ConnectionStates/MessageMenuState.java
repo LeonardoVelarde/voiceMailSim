@@ -1,6 +1,6 @@
-package Model.ConnectionStates;
+package Controller.ConnectionStates;
 
-import Model.Connection;
+import Controller.Connection;
 import Model.Message;
 
 public class MessageMenuState implements ConnectionState {

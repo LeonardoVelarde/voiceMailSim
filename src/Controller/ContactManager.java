@@ -1,4 +1,6 @@
-package Model;
+package Controller;
+import Model.Contact;
+
 import java.util.ArrayList;
 
 /*

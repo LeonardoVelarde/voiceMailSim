@@ -1,4 +1,7 @@
+import Controller.Connection;
 import Model.*;
+import View.InterfacePhoneConsole;
+import View.UserInterface;
 import org.junit.Before;
 import org.junit.Test;
 

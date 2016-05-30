@@ -1,10 +1,12 @@
-package Model;
+package View;
+import Controller.Connection;
+
 import java.util.Scanner;
 
 /*
  * Created by levelarde on 26-04-16.
  */
-public class InterfacePhoneConsole implements UserInterface{
+public class InterfacePhoneConsole implements UserInterface {
     private Scanner scanner;
     public InterfacePhoneConsole(){
         this.scanner = new Scanner(System.in);

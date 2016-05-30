@@ -1,12 +1,12 @@
 package Model;
 import java.util.ArrayList;
 
-/**
+/*
    A system of voice mail boxes.
 */
 public class MailSystem
 {
-   /**
+   /*
       Constructs a mail system with a given number of mailboxes
       @param mailboxCount the number of mailboxes
    */

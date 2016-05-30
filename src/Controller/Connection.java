@@ -1,9 +1,13 @@
-package Model;
+package Controller;
 
-import Model.ConnectionStates.ConnectedState;
-import Model.ConnectionStates.ConnectionState;
+import Controller.ConnectionStates.ConnectedState;
+import Controller.ConnectionStates.ConnectionState;
+import Model.MailSystem;
+import Model.Mailbox;
+import Model.Message;
+import View.UserInterface;
 
-/**
+/*
    Connects a phone to the mail system. The purpose of this
    class is to keep track of the state of a connection, since
    the phone itself is just a source of individual key presses.

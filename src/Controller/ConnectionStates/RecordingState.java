@@ -1,5 +1,5 @@
-package Model.ConnectionStates;
-import Model.*;
+package Controller.ConnectionStates;
+import Controller.Connection;
 
 public class RecordingState implements ConnectionState{
 

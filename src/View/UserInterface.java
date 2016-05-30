@@ -1,4 +1,4 @@
-package Model;
+package View;
 /*
  * Created by levelarde on 26-04-16.
  */

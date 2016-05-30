@@ -1,5 +1,8 @@
 package Model;
 
+import Controller.Connection;
+import View.InterfacePhoneConsole;
+
 public class RunnableClass implements Runnable {
     public InterfacePhoneConsole ui;
     public Connection connection;
