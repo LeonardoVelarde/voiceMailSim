@@ -1,3 +1,4 @@
-./bin
 *.class
 idea
+.idea/vcs.xml
+bin/

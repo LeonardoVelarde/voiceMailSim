@@ -1,3 +1,8 @@
+package Model;
+
+import Model.ConnectionStates.ConnectedState;
+import Model.ConnectionStates.ConnectionState;
+
 /**
    Connects a phone to the mail system. The purpose of this
    class is to keep track of the state of a connection, since
@@ -5,28 +10,28 @@
 */
 public class Connection
 {
-   private MailSystem system;
-   private Mailbox currentMailbox;
-   private String currentRecording;
-   private String accumulatedKeys;
-   private InterfaceManager interfaceManager;
-   private int state;
+   public MailSystem system;
+   public Mailbox currentMailbox;
+   public String currentRecording;
+   public String accumulatedKeys;
+   public InterfaceManager interfaceManager;
+   public int state;
+   public ConnectionState state2;
 
-   private static final int DISCONNECTED = 0;
-   private static final int CONNECTED = 1;
-   private static final int RECORDING = 2;
-   private static final int MAILBOX_MENU = 3;
-   private static final int MESSAGE_MENU = 4;
-   private static final int CHANGE_PASSCODE = 5;
-   private static final int CHANGE_GREETING = 6;
+   public static final int CONNECTED = 1;
+   public static final int RECORDING = 2;
+   public static final int MAILBOX_MENU = 3;
+   public static final int MESSAGE_MENU = 4;
+   public static final int CHANGE_PASSCODE = 5;
+   public static final int CHANGE_GREETING = 6;
 
-   private static final String INITIAL_PROMPT =
+   public static final String INITIAL_PROMPT =
            "Enter mailbox number followed by #";
-   private static final String MAILBOX_MENU_TEXT =
+   public static final String MAILBOX_MENU_TEXT =
            "Enter 1 to listen to your messages\n"
                    + "Enter 2 to change your passcode\n"
                    + "Enter 3 to change your greeting";
-   private static final String MESSAGE_MENU_TEXT =
+   public static final String MESSAGE_MENU_TEXT =
            "Enter 1 to listen to the current message\n"
                    + "Enter 2 to save the current message\n"
                    + "Enter 3 to delete the current message\n"
@@ -59,16 +64,24 @@ public class Connection
 
    public void dial(String key)
    {
-      if (state == CONNECTED)
-         connect(key);
+      if (state == CONNECTED){
+         state2.operate(key, this);
+      }
       else if (state == RECORDING)
-         login(key);
+      {
+         state2.operate(key, this);
+      }
       else if (state == CHANGE_PASSCODE)
+      {
+         state2.operate(key, this);
          changePasscode(key);
+      }
       else if (state == CHANGE_GREETING)
          changeGreeting(key);
       else if (state == MAILBOX_MENU)
-         mailboxMenu(key);
+      {
+         state2.operate(key, this);
+      }
       else if (state == MESSAGE_MENU)
          messageMenu(key);
    }
@@ -91,42 +104,12 @@ public class Connection
       currentRecording = "";
       accumulatedKeys = "";
       state = CONNECTED;
+      state2 = new ConnectedState();
       this.interfaceManager.speakToAllInterfaces(INITIAL_PROMPT);
    }
 
-   private void connect(String key)
-   {
-      if (key.equals("#"))
-      {
-         currentMailbox = system.findMailbox(accumulatedKeys);
-         if (currentMailbox != null)
-         {
-            state = RECORDING;
-            this.interfaceManager.speakToAllInterfaces(currentMailbox.getGreeting());
-         }
-         else
-            this.interfaceManager.speakToAllInterfaces("Incorrect mailbox number. Try again!");
-         accumulatedKeys = "";
-      }
-      else
-         accumulatedKeys += key;
-   }
-
-   private void login(String key)
-   {
-      if (key.equals("#"))
-      {
-         if (currentMailbox.checkPasscode(accumulatedKeys))
-         {
-            state = MAILBOX_MENU;
-            this.interfaceManager.speakToAllInterfaces(MAILBOX_MENU_TEXT);
-         }
-         else
-            this.interfaceManager.speakToAllInterfaces("Incorrect passcode. Try again!");
-         accumulatedKeys = "";
-      }
-      else
-         accumulatedKeys += key;
+   public void speakToAllInterfaces(String message){
+      this.interfaceManager.speakToAllInterfaces(message);
    }
 
    private void changePasscode(String key)
@@ -150,25 +133,6 @@ public class Connection
          currentRecording = "";
          state = MAILBOX_MENU;
          this.interfaceManager.speakToAllInterfaces(MAILBOX_MENU_TEXT);
-      }
-   }
-
-   private void mailboxMenu(String key)
-   {
-      if (key.equals("1"))
-      {
-         state = MESSAGE_MENU;
-         this.interfaceManager.speakToAllInterfaces(MESSAGE_MENU_TEXT);
-      }
-      else if (key.equals("2"))
-      {
-         state = CHANGE_PASSCODE;
-         this.interfaceManager.speakToAllInterfaces("Enter new passcode followed by the # key");
-      }
-      else if (key.equals("3"))
-      {
-         state = CHANGE_GREETING;
-         this.interfaceManager.speakToAllInterfaces("Record your greeting, then press the # key");
       }
    }
 

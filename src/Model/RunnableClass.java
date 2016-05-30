@@ -1,3 +1,4 @@
+package Model;
 
 public class RunnableClass implements Runnable {
     public InterfacePhoneConsole ui;

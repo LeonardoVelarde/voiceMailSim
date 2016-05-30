@@ -1,10 +1,11 @@
+package Model;
 /*
  * Created by levelarde on 20-04-16.
  */
 public class Contact {
     private String name;
     private String number;
-    Contact(String name, String number){
+    public Contact(String name, String number){
         this.name = name;
         this.number = number;
     }
