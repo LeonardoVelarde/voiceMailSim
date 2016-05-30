@@ -2,7 +2,6 @@ package Controller;
 
 import Controller.ConnectionStates.ConnectedState;
 import Controller.ConnectionStates.ConnectionState;
-import Model.MailSystem;
 import Model.Mailbox;
 import Model.Message;
 import View.UserInterface;

@@ -1,4 +1,6 @@
-package Model;
+package Controller;
+import Model.Mailbox;
+
 import java.util.ArrayList;
 
 /*

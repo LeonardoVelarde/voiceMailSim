@@ -1,5 +1,4 @@
-package Model;
-import Controller.Connection;
+package Controller;
 import View.*;
 /*
    This program tests the mail system. A single phone

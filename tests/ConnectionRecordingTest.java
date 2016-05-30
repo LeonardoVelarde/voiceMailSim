@@ -1,4 +1,5 @@
 import Controller.Connection;
+import Controller.MailSystem;
 import Model.*;
 import View.UserInterface;
 import org.junit.Test;
