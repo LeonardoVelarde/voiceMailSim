@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-public class _MessageTest {
+public class MessageTest {
 
 	@Test
 	public void itShouldReturnTheMessage() {

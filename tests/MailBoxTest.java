@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 
-public class _MailBoxTest {
+public class MailBoxTest {
 
 	@Test
 	public void itShouldReturnTheCorrectPassCode() {

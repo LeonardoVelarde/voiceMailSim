@@ -2,7 +2,7 @@ import Model.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class _MailSystemTest {
+public class MailSystemTest {
 
     @Test
     public void shouldReturnTheFirstMailBox(){

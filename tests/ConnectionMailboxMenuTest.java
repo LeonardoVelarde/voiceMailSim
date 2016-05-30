@@ -9,7 +9,7 @@ import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-public class _ConnectionMailboxMenuTest {
+public class ConnectionMailboxMenuTest {
 
 
     Mailbox currentMailbox;

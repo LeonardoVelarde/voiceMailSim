@@ -9,7 +9,7 @@ import org.junit.Before;
 import static org.mockito.Mockito.*;
 
 
-public class _ConnectionMessageMenuTest {
+public class ConnectionMessageMenuTest {
     Mailbox currentMailbox;
     MailSystem mailSystem;
     UserInterface phone;

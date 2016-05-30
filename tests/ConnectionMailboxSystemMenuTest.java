@@ -11,7 +11,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-public class _ConnectionMailboxSystemMenuTest {
+public class ConnectionMailboxSystemMenuTest {
 
 	Mailbox currentMailbox;
     MailSystem mailSystem;

@@ -7,7 +7,7 @@ import View.UserInterface;
 import org.junit.Test;
 import static org.mockito.Mockito.*;
 
-public class _ConnectionTest {
+public class ConnectionTest {
 
 	@Test
 	public void newConnectionShouldBeConnected() {

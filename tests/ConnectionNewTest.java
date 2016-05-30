@@ -9,7 +9,7 @@ import org.junit.Before;
 
 import static org.mockito.Mockito.*;
 
-public class _ConnectionNewTest {
+public class ConnectionNewTest {
 
     Mailbox currentMailbox;
     MailSystem mailSystem;

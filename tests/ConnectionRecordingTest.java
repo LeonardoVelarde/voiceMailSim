@@ -7,7 +7,7 @@ import org.junit.Before;
 
 import static org.mockito.Mockito.*;
 
-public class _ConnectionRecordingTest {
+public class ConnectionRecordingTest {
 
     Mailbox currentMailbox;
     MailSystem mailSystem;

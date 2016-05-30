@@ -2,37 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db79f7ec-9f3c-4801-9688-14736371006e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/View/ContactMainScreen.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/View/ContactMainScreen.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/View/SimulatorMenu.form" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/View/SimulatorMenu.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/Connection.java" afterPath="$PROJECT_DIR$/src/Controller/Connection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/ConnectionStates/ChangeGrettingState.java" afterPath="$PROJECT_DIR$/src/Controller/ConnectionStates/ChangeGrettingState.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/ConnectionStates/ChangePasscodeState.java" afterPath="$PROJECT_DIR$/src/Controller/ConnectionStates/ChangePasscodeState.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/ConnectionStates/ConnectedState.java" afterPath="$PROJECT_DIR$/src/Controller/ConnectionStates/ConnectedState.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/ConnectionStates/ConnectionState.java" afterPath="$PROJECT_DIR$/src/Controller/ConnectionStates/ConnectionState.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/ConnectionStates/MailBoxMenuState.java" afterPath="$PROJECT_DIR$/src/Controller/ConnectionStates/MailBoxMenuState.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/ConnectionStates/MessageMenuState.java" afterPath="$PROJECT_DIR$/src/Controller/ConnectionStates/MessageMenuState.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/ConnectionStates/RecordingState.java" afterPath="$PROJECT_DIR$/src/Controller/ConnectionStates/RecordingState.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/ContactManager.java" afterPath="$PROJECT_DIR$/src/Controller/ContactManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/InterfaceManager.java" afterPath="$PROJECT_DIR$/src/Controller/InterfaceManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/InterfacePhoneConsole.java" afterPath="$PROJECT_DIR$/src/View/InterfacePhoneConsole.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Model/UserInterface.java" afterPath="$PROJECT_DIR$/src/View/UserInterface.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/_ConnectionMailboxMenuTest.java" afterPath="$PROJECT_DIR$/tests/ConnectionMailboxMenuTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/_ConnectionMailboxSystemMenuTest.java" afterPath="$PROJECT_DIR$/tests/ConnectionMailboxSystemMenuTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/_ConnectionMessageMenuTest.java" afterPath="$PROJECT_DIR$/tests/ConnectionMessageMenuTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/_ConnectionNewTest.java" afterPath="$PROJECT_DIR$/tests/ConnectionNewTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/_ConnectionRecordingTest.java" afterPath="$PROJECT_DIR$/tests/ConnectionRecordingTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/_ConnectionTest.java" afterPath="$PROJECT_DIR$/tests/ConnectionTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/_MailBoxTest.java" afterPath="$PROJECT_DIR$/tests/MailBoxTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/_MailSystemTest.java" afterPath="$PROJECT_DIR$/tests/MailSystemTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/_MessageQueueTest.java" afterPath="$PROJECT_DIR$/tests/MessageQueueTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/_MessageTest.java" afterPath="$PROJECT_DIR$/tests/MessageTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/MailSystem.java" afterPath="$PROJECT_DIR$/src/Model/MailSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/MailSystemTester.java" afterPath="$PROJECT_DIR$/src/Model/MailSystemTester.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Mailbox.java" afterPath="$PROJECT_DIR$/src/Model/Mailbox.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Message.java" afterPath="$PROJECT_DIR$/src/Model/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/MessageQueue.java" afterPath="$PROJECT_DIR$/src/Model/MessageQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/RunnableClass.java" afterPath="$PROJECT_DIR$/src/Model/RunnableClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Telephone.java" afterPath="$PROJECT_DIR$/src/Model/Telephone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/InterfacePhoneGUI.java" afterPath="$PROJECT_DIR$/src/View/InterfacePhoneGUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_ConnectionMailboxMenuTest.java" afterPath="$PROJECT_DIR$/tests/_ConnectionMailboxMenuTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_ConnectionMailboxSystemMenuTest.java" afterPath="$PROJECT_DIR$/tests/_ConnectionMailboxSystemMenuTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_ConnectionMessageMenuTest.java" afterPath="$PROJECT_DIR$/tests/_ConnectionMessageMenuTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_ConnectionNewTest.java" afterPath="$PROJECT_DIR$/tests/_ConnectionNewTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_ConnectionRecordingTest.java" afterPath="$PROJECT_DIR$/tests/_ConnectionRecordingTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/_ConnectionTest.java" afterPath="$PROJECT_DIR$/tests/_ConnectionTest.java" />
     </list>
     <ignored path="VoiceMailSimulator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -272,13 +252,13 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.All in VoiceMailSimulator">
-    <configuration default="false" name="_ConnectionMessageMenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ConnectionMessageMenuTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="VoiceMailSimulator" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="_ConnectionMessageMenuTest" />
+      <option name="MAIN_CLASS_NAME" value="ConnectionMessageMenuTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -293,13 +273,13 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="_ConnectionRecordingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="ConnectionRecordingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="VoiceMailSimulator" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="_ConnectionRecordingTest" />
+      <option name="MAIN_CLASS_NAME" value="ConnectionRecordingTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -793,8 +773,8 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit._ConnectionMessageMenuTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit._ConnectionRecordingTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ConnectionMessageMenuTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ConnectionRecordingTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.All in VoiceMailSimulator" />
       <item index="3" class="java.lang.String" itemvalue="Application.MailSystemTester" />
       <item index="4" class="java.lang.String" itemvalue="Application.MailSystemTester" />
@@ -804,8 +784,8 @@
         <item index="0" class="java.lang.String" itemvalue="JUnit.All in VoiceMailSimulator" />
         <item index="1" class="java.lang.String" itemvalue="Application.MailSystemTester" />
         <item index="2" class="java.lang.String" itemvalue="Application.MailSystemTester" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit._ConnectionRecordingTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit._ConnectionMessageMenuTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ConnectionRecordingTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ConnectionMessageMenuTest" />
       </list>
     </recent_temporary>
   </component>
@@ -833,17 +813,11 @@
       <workItem from="1464448155921" duration="13752000" />
       <workItem from="1464582681045" duration="3537000" />
       <workItem from="1464596007245" duration="377000" />
-      <workItem from="1464596391226" duration="5482000" />
+      <workItem from="1464596391226" duration="5709000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_VoiceMailSimulator - 2016.05.30 at 05h 21m 47s.xml">
-      <configuration name="All in VoiceMailSimulator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_VoiceMailSimulator - 2016.05.30 at 05h 34m 24s.xml">
-      <configuration name="All in VoiceMailSimulator" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_VoiceMailSimulator - 2016.05.30 at 05h 38m 19s.xml">
       <configuration name="All in VoiceMailSimulator" configurationId="JUnit" />
     </history-entry>
@@ -868,9 +842,15 @@
     <history-entry file="All_in_VoiceMailSimulator - 2016.05.30 at 05h 51m 07s.xml">
       <configuration name="All in VoiceMailSimulator" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_VoiceMailSimulator - 2016.05.30 at 05h 54m 16s.xml">
+      <configuration name="All in VoiceMailSimulator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_VoiceMailSimulator - 2016.05.30 at 05h 54m 58s.xml">
+      <configuration name="All in VoiceMailSimulator" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54923000" />
+    <option name="totallyTimeSpent" value="55150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1920" height="1056" extended-state="6" />
@@ -923,42 +903,42 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/_ConnectionNewTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/ConnectionNewTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_ConnectionRecordingTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/ConnectionRecordingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_ConnectionTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/ConnectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_MailBoxTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/MailBoxTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_MailSystemTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/MailSystemTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_MessageQueueTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/MessageQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -995,30 +975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/MailSystem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.62068963">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Model/MessageQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.62068963">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Model/RunnableClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1035,7 +991,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_ConnectionRecordingTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/ConnectionRecordingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
@@ -1043,7 +999,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_ConnectionMessageMenuTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/ConnectionMessageMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="15" />
@@ -1053,7 +1009,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_ConnectionMailboxSystemMenuTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/ConnectionMailboxSystemMenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="15" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
@@ -1061,7 +1017,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_ConnectionMailboxMenuTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/ConnectionNewTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029363785">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -1069,7 +1025,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_ConnectionNewTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/ConnectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030821918">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/MailBoxTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030821918">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/MailSystemTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029363785">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -1077,7 +1049,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_ConnectionTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/MessageQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.030821918">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -1085,31 +1057,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_MailBoxTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030821918">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_MailSystemTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029363785">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_MessageQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.030821918">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/_MessageTest.java">
+    <entry file="file://$PROJECT_DIR$/tests/MessageTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.030821918">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -1245,6 +1193,40 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/MailSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ConnectionMailboxMenuTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2131324">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/MessageQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20809248">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
