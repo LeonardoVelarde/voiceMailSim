@@ -64,26 +64,7 @@ public class Connection
 
    public void dial(String key)
    {
-      if (state == CONNECTED){
-         state2.operate(key, this);
-      }
-      else if (state == RECORDING)
-      {
-         state2.operate(key, this);
-      }
-      else if (state == CHANGE_PASSCODE)
-      {
-         state2.operate(key, this);
-         changePasscode(key);
-      }
-      else if (state == CHANGE_GREETING)
-         changeGreeting(key);
-      else if (state == MAILBOX_MENU)
-      {
-         state2.operate(key, this);
-      }
-      else if (state == MESSAGE_MENU)
-         messageMenu(key);
+      state2.operate(key, this);
    }
 
    public void record(String voice)
@@ -112,58 +93,6 @@ public class Connection
       this.interfaceManager.speakToAllInterfaces(message);
    }
 
-   private void changePasscode(String key)
-   {
-      if (key.equals("#"))
-      {
-         currentMailbox.setPasscode(accumulatedKeys);
-         state = MAILBOX_MENU;
-         this.interfaceManager.speakToAllInterfaces(MAILBOX_MENU_TEXT);
-         accumulatedKeys = "";
-      }
-      else
-         accumulatedKeys += key;
-   }
-
-   private void changeGreeting(String key)
-   {
-      if (key.equals("#"))
-      {
-         currentMailbox.setGreeting(currentRecording);
-         currentRecording = "";
-         state = MAILBOX_MENU;
-         this.interfaceManager.speakToAllInterfaces(MAILBOX_MENU_TEXT);
-      }
-   }
-
-   private void messageMenu(String key)
-   {
-      if (key.equals("1"))
-      {
-         String output = "";
-         Message m = currentMailbox.getCurrentMessage();
-         if (m == null) output += "No messages." + "\n";
-         else output += m.getText() + "\n";
-         output += MESSAGE_MENU_TEXT;
-         this.interfaceManager.speakToAllInterfaces(output);
-      }
-      else if (key.equals("2"))
-      {
-         currentMailbox.saveCurrentMessage();
-         this.interfaceManager.speakToAllInterfaces(MESSAGE_MENU_TEXT);
-      }
-      else if (key.equals("3"))
-      {
-         currentMailbox.removeCurrentMessage();
-         this.interfaceManager.speakToAllInterfaces(MESSAGE_MENU_TEXT);
-      }
-      else if (key.equals("4"))
-      {
-         state = MAILBOX_MENU;
-         this.interfaceManager.speakToAllInterfaces(MAILBOX_MENU_TEXT);
-      }
-   }
-   
 
 public boolean isConnected() {
     return state == CONNECTED;
